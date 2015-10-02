@@ -67,7 +67,10 @@ public class Generate {
 		return nums;
 	}
 	public static void printf(int[] nums){
-		System.out.println(transArray2String(nums));
+		printf(transArray2String(nums));
+	}
+	public static void printf(Object obj){
+		System.out.println(String.valueOf(obj));
 	}
 	public static String transArray2String(int[] nums){
 		StringBuffer stringBuffer=new StringBuffer();

@@ -14,4 +14,13 @@ public class ArrayUtils {
 	public static void printf(int[] nums){
 		Generate.printf(nums);
 	}
+	public static void printfAryAsc(int[] ary){
+		Generate.printf(isAryAsc(ary));
+	}
+	public static boolean isAryAsc(int[] array){
+		for(int i=1,n=array.length;i<n;i++){
+			if(array[i-1]>array[i])return false;
+		}
+		return true;
+	}
 }
