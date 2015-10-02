@@ -1,6 +1,5 @@
 package com.asiainfo.algorithms.sort;
 
-import com.asiainfo.algorithms.utils.ArrayUtils;
 
 public class ShellSort {
 	public int[] sort(int[] array) {
@@ -22,12 +21,5 @@ public class ShellSort {
 
 		}
 		return array;
-	}
-	public static void main(String[] args) {
-		int[] nums=ArrayUtils.generateNoRepeatArray(10, 20, 5);
-		ArrayUtils.printf(nums);
-		ShellSort sort=new ShellSort();
-		sort.sort(nums);
-		ArrayUtils.printf(nums);
 	}
 }
