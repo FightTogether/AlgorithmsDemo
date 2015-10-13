@@ -1,6 +1,5 @@
 package com.asiainfo.algorithms.sort;
 
-import com.asiainfo.algorithms.utils.ArrayUtils;
 
 public class QuickSort {
 	public static void sort(int[] array) {
@@ -29,11 +28,5 @@ public class QuickSort {
 		int temp=array[idxA];
 		array[idxA]=array[idxB];
 		array[idxB]=temp;
-	}
-	public static void main(String[] args) {
-		int[] array=ArrayUtils.generateNoRepeatArray(20, 40, 10);
-		ArrayUtils.printf(array);
-		sort(array);
-		ArrayUtils.printf(array);
 	}
 }
