@@ -1,6 +1,7 @@
 package com.asiainfo.algorithms.wordpattern;
 
 
+
 public class Solution {
 	public boolean wordPattern(String pattern, String str) {
 		if(str==null||"".equals(str))return false;
